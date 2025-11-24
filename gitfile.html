@@ -1,10 +1,17 @@
+<?php
+// You can add session checks or login checks here if needed
+// session_start();
+// if (!isset($_SESSION['username'])) {
+//     header("Location: login.php");
+//     exit();
+// }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-
     <style>
         body {
             margin: 0;
@@ -17,7 +24,6 @@
             align-items: center;
             color: white;
         }
-
         .container {
             text-align: center;
             padding: 40px;
@@ -26,28 +32,24 @@
             backdrop-filter: blur(10px);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
         }
-
         h1 {
             margin-bottom: 10px;
             font-size: 3rem;
             font-weight: 600;
         }
-
         p {
             font-size: 1.2rem;
             margin-bottom: 20px;
         }
-
         .btn {
             padding: 12px 24px;
             font-size: 1rem;
             text-decoration: none;
-            color: #fff;
+            color: white;
             background: #1e90ff;
             border-radius: 8px;
             transition: 0.3s;
         }
-
         .btn:hover {
             background: #0b70d0;
         }
@@ -55,11 +57,11 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>Welcome!</h1>
-        <p>We're glad to have you here.</p>
-        <a href="#" class="btn">Get Started</a>
-    </div>
+<div class="container">
+    <h1>Welcome!</h1>
+    <p>You have successfully accessed the PHP Welcome Page.</p>
+    <a href="#" class="btn">Continue</a>
+</div>
 
 </body>
 </html>
